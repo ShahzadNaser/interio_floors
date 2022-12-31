@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include interio_floors *.css
+recursive-include interio_floors *.csv
+recursive-include interio_floors *.html
+recursive-include interio_floors *.ico
+recursive-include interio_floors *.js
+recursive-include interio_floors *.json
+recursive-include interio_floors *.md
+recursive-include interio_floors *.png
+recursive-include interio_floors *.py
+recursive-include interio_floors *.svg
+recursive-include interio_floors *.txt
+recursive-exclude interio_floors *.pyc
