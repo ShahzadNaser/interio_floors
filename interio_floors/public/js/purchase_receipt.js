@@ -1,4 +1,4 @@
-frappe.ui.form.on('Sales Order', {
+frappe.ui.form.on('Purchase Receipt', {
     update_item_details: function(item){
         console.log(item);
         return cur_frm.call({
@@ -20,7 +20,7 @@ frappe.ui.form.on('Sales Order', {
 
     }
 });
-frappe.ui.form.on('Sales Order Item', {
+frappe.ui.form.on('Purchase Receipt Item', {
 	item_code: function(frm,cdt, cdn) {
 		var item = frappe.get_doc(cdt, cdn);
         frm.events.update_item_details(item)
