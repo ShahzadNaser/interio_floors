@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-31 14:31:24.944150",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "uom",
+  "box_size",
+  "per_piece",
+  "per_box"
+ ],
+ "fields": [
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "box_size",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Box Size",
+   "precision": "0"
+  },
+  {
+   "default": "1",
+   "fieldname": "per_piece",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Per Piece",
+   "precision": "4",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "per_box",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Per Box",
+   "precision": "4",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-09 21:54:30.635722",
+ "modified_by": "Administrator",
+ "module": "Interio Floors",
+ "name": "Conversion Details",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
