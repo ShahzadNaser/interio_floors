@@ -29,7 +29,7 @@ frappe.ui.form.on('Sales Order Item', {
     pieces: function(frm, cdt, cdn){
 		var item = frappe.get_doc(cdt, cdn);
         if(item.box_size && item.pieces >= item.box_size){
-            frappe.msgprint("Pieces cannot be greater than "+(item.box_size-1))
+            frappe.msgprint("You have exceeded maximum Box Size limit. Plank/Length cannot exceed "+(item.box_size-1)+".")
             frappe.model.set_value(item.doctype, item.name,"pieces",item.box_size-1);
             item.pieces = item.box_size-1;
             frm.refresh_field("items");
